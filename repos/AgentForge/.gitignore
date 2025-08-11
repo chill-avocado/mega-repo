@@ -1,0 +1,53 @@
+# Virtual environments
+/venv/
+/.venv/
+
+# Configuration files
+.env
+Config/api_keys.ini
+
+# IDE settings
+.idea/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Logs
+Logs/
+*.log
+*Logs/
+*logs/
+logs/
+
+
+# Database directories
+*DB/
+*db/
+
+# Build and distribution files
+build/
+dist/
+src/agentforge.egg-info/
+
+# Documentation tools
+docs/.obsidian/
+
+# Examples and sandbox
+Examples/**/DB/
+Examples/**/Logs/
+Examples/**/Tests/
+sandbox/**/DB/
+sandbox/**/Logs/
+sandbox/**/Tests/
+
+# Specific files
+AgentForge.log
+src/agentforge/persona/chatbot.json
+*.env
+.vscode/
+/.cursorignore
+.cursor/rules/
+.pytest_cache/
+.cursor/
+

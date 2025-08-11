@@ -1,0 +1,2 @@
+include src/agentforge/utils/guiutils/discord_client.py
+recursive-include src/agentforge/utils/ *
