@@ -1,0 +1,8 @@
+# Adapters for os_interaction
+from .self-operating-computer_operatingsystem_adapter import Self_Operating_ComputerOperatingSystemAdapter
+
+__all__ = ['Self_Operating_ComputerOperatingSystemAdapter']
+from .mcp-remote-macos-use_vncclient_adapter import Mcp_Remote_Macos_UseVNCClientAdapter
+__all__.append('Mcp_Remote_Macos_UseVNCClientAdapter')
+from .macos-agent_deferredlogger_adapter import Macos_AgentDeferredLoggerAdapter
+__all__.append('Macos_AgentDeferredLoggerAdapter')

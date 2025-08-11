@@ -37,6 +37,7 @@ Here you'll find:
 - A README explaining the category
 - Copies of code files from relevant repositories
 - Common components in the `common/` directory
+- Unified interfaces in the `unified/` directory
 
 ### Using Common Components
 
@@ -61,6 +62,27 @@ class MyAgent(Agent):
 agent = MyAgent("MyAgent")
 result = agent.run("Achieve this goal")
 ```
+
+### Using Unified Interfaces
+
+Each functional category now includes a unified interface that allows you to access functionality from any repository through a consistent API. The unified interfaces are located in the `unified/` directory of each category.
+
+For example, to use the agent frameworks unified interface:
+
+```python
+from functions.agent_frameworks.unified import AgentFrameworksFactory
+
+# Create a unified interface with the default implementation
+agent = AgentFrameworksFactory.create()
+
+# Create a unified interface with a specific implementation
+agent = AgentFrameworksFactory.create('AgentForge/Agent')
+
+# Use the unified interface
+result = agent.run("Achieve this goal")
+```
+
+The unified interfaces provide a consistent API across different implementations, making it easy to switch between different repositories without changing your code.
 
 ### Finding Repositories by Functionality
 
