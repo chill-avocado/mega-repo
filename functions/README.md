@@ -1,6 +1,6 @@
 # Functional Categorization of AI/AGI Repositories
 
-This directory contains a functional categorization of the various repositories in the mega-repo. Each subdirectory represents a specific functional category and contains symbolic links to the relevant code from the original repositories.
+This directory contains a functional categorization of the various repositories in the mega-repo. Each subdirectory represents a specific functional category and contains copies of the code files from the original repositories.
 
 ## Categories
 
@@ -19,7 +19,7 @@ This directory contains a functional categorization of the various repositories 
 
 Each category directory contains:
 - A README explaining the category and included repositories
-- Symbolic links to the relevant code from the original repositories
+- Copies of code files from the original repositories
 - Common functionality extracted and organized by purpose
 
 You can navigate to a specific category to find all related code across different repositories, making it easier to understand and work with functionally similar components.

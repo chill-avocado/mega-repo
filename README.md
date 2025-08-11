@@ -7,7 +7,7 @@ This repository contains a collection of AI and AGI-related repositories, organi
 - **`repos/`**: Contains the original repositories
 - **`functions/`**: Contains the functional categorization of the repositories
   - Each subdirectory represents a specific functional category
-  - Each category contains symbolic links to the relevant repositories
+  - Each category contains copies of the code files from relevant repositories
   - Each category has a `common/` directory with reusable components
 
 ## Functional Categories
@@ -35,7 +35,7 @@ cd functions/agent_frameworks
 
 Here you'll find:
 - A README explaining the category
-- Symbolic links to relevant repositories
+- Copies of code files from relevant repositories
 - Common components in the `common/` directory
 
 ### Using Common Components
@@ -76,7 +76,7 @@ This index provides a comprehensive list of all repositories categorized by func
 
 The repository includes several scripts to help you work with the categorized code:
 
-- **`categorize_repos.py`**: Creates symbolic links from repositories to their functional categories
+- **`categorize_repos.py`**: Copies code files from repositories to their functional categories
 - **`analyze_functionality.py`**: Analyzes repositories for specific functionality patterns
 - **`extract_common_components.py`**: Extracts common components from repositories
 - **`generate_index.py`**: Generates a comprehensive index of repositories and their functionality
