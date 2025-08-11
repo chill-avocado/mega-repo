@@ -13,6 +13,7 @@ This category contains repositories focused on creating autonomous AI agents tha
 - **autogen**: Microsoft's framework for building conversational agents
 - **babyagi**: Simple implementation of an autonomous agent using LLMs
 - **Teenage-AGI**: Agent with memory management and planning capabilities
+- **openhands**: A comprehensive AI agent framework with components for agents, memory, LLM integration, and more
 
 ## Core Functionality
 

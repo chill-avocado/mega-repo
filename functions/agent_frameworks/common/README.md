@@ -13,6 +13,7 @@ This directory contains common functionality extracted from repositories in this
 - autogen
 - babyagi
 - Teenage-AGI
+- openhands
 
 ## Common Components
 

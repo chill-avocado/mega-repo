@@ -360,6 +360,83 @@ Found in files:
 - `agent.py`
 - `main.py`
 
+### openhands
+
+#### Tool Use
+
+Found in files:
+- `build_vscode.py`
+- `evaluation/benchmarks/EDA/game.py`
+- `evaluation/benchmarks/EDA/run_infer.py`
+- `evaluation/benchmarks/agent_bench/helper.py`
+- `evaluation/benchmarks/agent_bench/run_infer.py`
+- `evaluation/benchmarks/aider_bench/run_infer.py`
+- `evaluation/benchmarks/aider_bench/scripts/summarize_results.py`
+- `evaluation/benchmarks/biocoder/run_infer.py`
+- `evaluation/benchmarks/biocoder/scripts/setup/copy_changed_code.py`
+- `evaluation/benchmarks/bird/run_infer.py`
+- ... and 424 more files
+
+#### Agent Lifecycle
+
+Found in files:
+- `evaluation/benchmarks/agent_bench/run_infer.py`
+- `evaluation/benchmarks/aider_bench/run_infer.py`
+- `evaluation/integration_tests/run_infer.py`
+- `frontend/src/api/open-hands.ts`
+- `frontend/src/api/open-hands.types.ts`
+- `frontend/src/components/features/conversation-panel/microagents-modal.tsx`
+- `frontend/src/components/features/microagent-management/microagent-management-content.tsx`
+- `frontend/src/hooks/mutation/use-create-conversation.ts`
+- `frontend/src/hooks/query/use-conversation-microagents.ts`
+- `frontend/src/hooks/use-create-conversation-and-subscribe-multiple.ts`
+- ... and 56 more files
+
+#### Memory
+
+Found in files:
+- `evaluation/benchmarks/EDA/run_infer.py`
+- `evaluation/benchmarks/agent_bench/run_infer.py`
+- `evaluation/benchmarks/aider_bench/run_infer.py`
+- `evaluation/benchmarks/aider_bench/scripts/summarize_results.py`
+- `evaluation/benchmarks/biocoder/run_infer.py`
+- `evaluation/benchmarks/bird/run_infer.py`
+- `evaluation/benchmarks/browsing_delegation/run_infer.py`
+- `evaluation/benchmarks/commit0/run_infer.py`
+- `evaluation/benchmarks/discoverybench/eval_utils/openai_helpers.py`
+- `evaluation/benchmarks/discoverybench/run_infer.py`
+- ... and 167 more files
+
+#### Planning
+
+Found in files:
+- `evaluation/benchmarks/EDA/game.py`
+- `evaluation/benchmarks/discoverybench/eval_utils/eval_w_subhypo_gen.py`
+- `evaluation/benchmarks/gorilla/utils.py`
+- `evaluation/benchmarks/logic_reasoning/logic_inference.py`
+- `evaluation/benchmarks/ml_bench/run_analysis.py`
+- `evaluation/benchmarks/the_agent_company/browsing.py`
+- `evaluation/benchmarks/the_agent_company/scripts/summarise_results.py`
+- `frontend/src/i18n/declaration.ts`
+- `frontend/src/mocks/session-history.mock.ts`
+- `frontend/src/types/tab-option.tsx`
+- ... and 21 more files
+
+#### Multi Agent
+
+Found in files:
+- `openhands/agenthub/browsing_agent/browsing_agent.py`
+- `openhands/agenthub/codeact_agent/tools/browser.py`
+- `openhands/agenthub/readonly_agent/tools/glob.py`
+- `openhands/agenthub/readonly_agent/tools/grep.py`
+- `openhands/controller/agent_controller.py`
+- `openhands/controller/state/state.py`
+- `openhands/memory/memory.py`
+- `tests/unit/core/config/test_config_utils.py`
+- `tests/unit/test_memory.py`
+- `tests/unit/test_prompt_caching.py`
+- ... and 1 more files
+
 
 ## User Interfaces
 
