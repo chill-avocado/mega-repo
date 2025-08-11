@@ -85,6 +85,10 @@ def copy_code_files():
                 rel_path = file_path.relative_to(repo_path)
                 dest_path = target_path / rel_path
                 
+                # Skip files that would conflict with our own common directory
+                if str(dest_path) == str(category_dir / 'common'):
+                    continue
+                
                 # Create parent directories if they don't exist
                 dest_path.parent.mkdir(parents=True, exist_ok=True)
                 
