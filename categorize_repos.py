@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Script to categorize repositories by function and create symbolic links
-to the relevant code in the appropriate category directories.
+Script to categorize repositories by function and copy
+the relevant code to the appropriate category directories.
 """
 
 import os
@@ -48,8 +48,14 @@ REPO_CATEGORIES = {
 REPO_DIR = Path('repos')
 FUNCTIONS_DIR = Path('functions')
 
-def create_symlinks():
-    """Create symbolic links from repositories to their functional categories."""
+# File extensions to copy (code files only)
+CODE_EXTENSIONS = [
+    '.py', '.js', '.ts', '.jsx', '.tsx', '.java', '.cs', '.go', '.rs',
+    '.c', '.cpp', '.h', '.hpp', '.rb', '.php', '.scala', '.kt', '.swift'
+]
+
+def copy_code_files():
+    """Copy code files from repositories to their functional categories."""
     for category, repos in REPO_CATEGORIES.items():
         category_dir = FUNCTIONS_DIR / category
         
@@ -62,18 +68,30 @@ def create_symlinks():
                 print(f"Warning: Repository {repo} not found, skipping")
                 continue
             
-            # Create a symlink to the repository in the category directory
+            # Create a directory for the repository in the category directory
             target_path = category_dir / repo
             if target_path.exists():
-                if target_path.is_symlink():
-                    target_path.unlink()
-                else:
-                    shutil.rmtree(target_path)
+                shutil.rmtree(target_path)
             
-            # Create relative symlink
-            rel_path = os.path.relpath(repo_path, category_dir)
-            os.symlink(rel_path, target_path, target_is_directory=True)
-            print(f"Created symlink: {target_path} -> {rel_path}")
+            target_path.mkdir(parents=True)
+            
+            # Find and copy all code files
+            code_files = []
+            for ext in CODE_EXTENSIONS:
+                code_files.extend(repo_path.glob(f'**/*{ext}'))
+            
+            # Copy each code file, preserving directory structure
+            for file_path in code_files:
+                rel_path = file_path.relative_to(repo_path)
+                dest_path = target_path / rel_path
+                
+                # Create parent directories if they don't exist
+                dest_path.parent.mkdir(parents=True, exist_ok=True)
+                
+                # Copy the file
+                shutil.copy2(file_path, dest_path)
+            
+            print(f"Copied code files from {repo} to {target_path}")
 
 def extract_common_functionality():
     """Extract common functionality from repositories in each category."""
@@ -112,8 +130,8 @@ def extract_common_functionality():
 
 def main():
     """Main function to categorize repositories."""
-    # Create symbolic links
-    create_symlinks()
+    # Copy code files
+    copy_code_files()
     
     # Extract common functionality
     extract_common_functionality()
