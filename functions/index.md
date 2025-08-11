@@ -17,6 +17,7 @@ This document provides an index of all repositories categorized by functionality
 - [autogen](../repos/autogen)
 - [babyagi](../repos/babyagi)
 - [Teenage-AGI](../repos/Teenage-AGI)
+- [openhands](../repos/openhands)
 
 #### Common Components
 
@@ -356,6 +357,48 @@ Category: Agent Frameworks
 - **Tool Use**
   - `agent.py`
   - `main.py`
+
+### openhands
+
+Category: Agent Frameworks
+
+#### Functionality
+
+- **Tool Use**
+  - `build_vscode.py`
+  - `evaluation/benchmarks/EDA/game.py`
+  - `evaluation/benchmarks/EDA/run_infer.py`
+  - `evaluation/benchmarks/agent_bench/helper.py`
+  - `evaluation/benchmarks/agent_bench/run_infer.py`
+  - ... and 429 more files
+- **Agent Lifecycle**
+  - `evaluation/benchmarks/agent_bench/run_infer.py`
+  - `evaluation/benchmarks/aider_bench/run_infer.py`
+  - `evaluation/integration_tests/run_infer.py`
+  - `frontend/src/api/open-hands.ts`
+  - `frontend/src/api/open-hands.types.ts`
+  - ... and 61 more files
+- **Memory**
+  - `evaluation/benchmarks/EDA/run_infer.py`
+  - `evaluation/benchmarks/agent_bench/run_infer.py`
+  - `evaluation/benchmarks/aider_bench/run_infer.py`
+  - `evaluation/benchmarks/aider_bench/scripts/summarize_results.py`
+  - `evaluation/benchmarks/biocoder/run_infer.py`
+  - ... and 172 more files
+- **Planning**
+  - `evaluation/benchmarks/EDA/game.py`
+  - `evaluation/benchmarks/discoverybench/eval_utils/eval_w_subhypo_gen.py`
+  - `evaluation/benchmarks/gorilla/utils.py`
+  - `evaluation/benchmarks/logic_reasoning/logic_inference.py`
+  - `evaluation/benchmarks/ml_bench/run_analysis.py`
+  - ... and 26 more files
+- **Multi Agent**
+  - `openhands/agenthub/browsing_agent/browsing_agent.py`
+  - `openhands/agenthub/codeact_agent/tools/browser.py`
+  - `openhands/agenthub/readonly_agent/tools/glob.py`
+  - `openhands/agenthub/readonly_agent/tools/grep.py`
+  - `openhands/controller/agent_controller.py`
+  - ... and 6 more files
 
 ### open-webui
 

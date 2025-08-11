@@ -13,7 +13,8 @@ from pathlib import Path
 REPO_CATEGORIES = {
     'agent_frameworks': [
         'AgentForge', 'AgentGPT', 'AgentK', 'Auto-GPT-MetaTrader-Plugin',
-        'Free-Auto-GPT', 'agent-zero', 'autogen', 'babyagi', 'Teenage-AGI'
+        'Free-Auto-GPT', 'agent-zero', 'autogen', 'babyagi', 'Teenage-AGI',
+        'openhands'
     ],
     'user_interfaces': [
         'open-webui', 'web-ui', 'draw-a-ui'

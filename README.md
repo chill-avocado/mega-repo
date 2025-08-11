@@ -12,16 +12,16 @@ This repository contains a collection of AI and AGI-related repositories, organi
 
 ## Functional Categories
 
-1. **Agent Frameworks**: Repositories focused on creating autonomous AI agents
-2. **User Interfaces**: Repositories focused on UI/UX for AI systems
-3. **OS Interaction**: Repositories for AI interaction with operating systems
-4. **Browser Automation**: Repositories for AI-driven browser interaction
-5. **Code Execution**: Repositories for code generation and execution
-6. **Cognitive Systems**: Repositories focused on cognitive architectures
-7. **Evolution & Optimization**: Repositories for evolutionary algorithms
-8. **Integration**: Repositories that combine multiple systems
-9. **NLP**: Repositories focused on natural language processing
-10. **Documentation**: Repositories that are collections or documentation
+1. **Agent Frameworks**: Repositories focused on creating autonomous AI agents (AgentForge, AgentGPT, AgentK, Auto-GPT-MetaTrader-Plugin, Free-Auto-GPT, agent-zero, autogen, babyagi, Teenage-AGI, openhands)
+2. **User Interfaces**: Repositories focused on UI/UX for AI systems (open-webui, web-ui, draw-a-ui)
+3. **OS Interaction**: Repositories for AI interaction with operating systems (MacOS-Agent, self-operating-computer, mcp-remote-macos-use)
+4. **Browser Automation**: Repositories for AI-driven browser interaction (browser-use)
+5. **Code Execution**: Repositories for code generation and execution (open-interpreter, pyCodeAGI, SuperCoder, automata)
+6. **Cognitive Systems**: Repositories focused on cognitive architectures (opencog, openagi, AGI-Samantha)
+7. **Evolution & Optimization**: Repositories for evolutionary algorithms (openevolve)
+8. **Integration**: Repositories that combine multiple systems (Unification, LocalAGI)
+9. **NLP**: Repositories focused on natural language processing (senpai, html-agility-pack)
+10. **Documentation**: Repositories that are collections or documentation (Awesome-AGI, awesome-agi-cocosci)
 
 ## How to Use This Repository
 
